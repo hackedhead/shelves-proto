@@ -1,0 +1,9 @@
+<body>
+<h1> {{ project.name }}</h1>
+
+{% if project.media_set %}
+  <p>some media</p>
+  <img src= "{{ project.media_set.all.0.image.url }}" />
+{% endif %}
+<p>{{ project.description }}</p>
+</body>
